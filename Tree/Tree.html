@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>师门树</title>
+    <style>
+      ::-webkit-scrollbar {
+        display: none;
+      }
+      html,
+      body {
+        overflow: scroll;
+        margin: 0;
+        text-align: center;
+        background-color: #e4e4e4;
+      }
+      #input{
+          width: 400px;
+          min-height: 100px;
+          border:1px solid #F00
+      }
+       #box1{
+        margin:0;
+        width:auto;
+        height:200px;
+        background-color: aqua;
+      } 
+
+
+ 
+    </style>
+  </head>
+  <body>
+    
+      <div id="box1">
+      <h2>师生关系树生成</h2>
+        <textarea id="input">
+          导师：张三
+          2016级博士生：天一、王二、吴五
+          2015级硕士生：李四、王五、许六
+          2016级硕士生：刘一、李二、李三
+          2017级本科生：刘六、琪七、司四
+        </textarea>
+        
+        <div id="but1">
+          <button id="generate">生成此关系树</button>
+        </div>
+      </div>
+      <div id="nodes"></div>
+    <script>
+      /*Fixing iframe window.innerHeight 0 issue in Safari*/ document.body
+        .clientHeight;
+    </script>
+    <script src="https://gw.alipayobjects.com/os/antv/pkg/_antv.g6-3.1.1/build/g6.js"></script>
+    <script src="https://gw.alipayobjects.com/os/antv/assets/lib/jquery-3.2.1.min.js"></script>
+    <script src="https://gw.alipayobjects.com/os/antv/pkg/_antv.hierarchy-0.5.0/build/hierarchy.js"></script>
+    <script type="" src="./Tree.js"></script>
+
+  </body>
+</html>
